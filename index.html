@@ -1,13 +1,13 @@
-
+п»ї
 <!-- http://forum.cherepovets.net/index.php?showtopic=162447 -->
 <!-- http://htmlbook.ru/html/option.html -->
-<!-- <pre>...</pre>	Текст фиксированной ширины с сохранением всех пробелов и переносов. -->
+<!-- <pre>...</pre>	РўРµРєСЃС‚ С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕР№ С€РёСЂРёРЅС‹ СЃ СЃРѕС…СЂР°РЅРµРЅРёРµРј РІСЃРµС… РїСЂРѕР±РµР»РѕРІ Рё РїРµСЂРµРЅРѕСЃРѕРІ. -->
 <!-- http://htmlbook.ru/samlayout/blochnaya-verstka/pozitsionirovanie-elementov -->
-<!-- http://www.dataved.ru/2011/12/javascript.html - рандомные холсты, не повторяются -->
-<!-- http://shpargalkablog.ru/2012/04/css-knopki.html - много кнопок -->
-<!-- http://htmlbook.ru/html/img - тег img -->
-<!-- http://www.tablesgenerator.com/html_tables# - создание таблиц -->
-<!-- http://www.kakprosto.ru/kak-86014-kak-vstavit-kartinku-v-html-tablicu - карусель из фото в ячейке -->
+<!-- http://www.dataved.ru/2011/12/javascript.html - СЂР°РЅРґРѕРјРЅС‹Рµ С…РѕР»СЃС‚С‹, РЅРµ РїРѕРІС‚РѕСЂСЏСЋС‚СЃСЏ -->
+<!-- http://shpargalkablog.ru/2012/04/css-knopki.html - РјРЅРѕРіРѕ РєРЅРѕРїРѕРє -->
+<!-- http://htmlbook.ru/html/img - С‚РµРі img -->
+<!-- http://www.tablesgenerator.com/html_tables# - СЃРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС† -->
+<!-- http://www.kakprosto.ru/kak-86014-kak-vstavit-kartinku-v-html-tablicu - РєР°СЂСѓСЃРµР»СЊ РёР· С„РѕС‚Рѕ РІ СЏС‡РµР№РєРµ -->
 
 <!DOCTYPE HTML>
 <html>
@@ -18,7 +18,7 @@
       n = f.ST1.selectedIndex
       k = f.ST2.selectedIndex
       g = f.ST3.selectedIndex 
-      if(n | k | g) alert(("Тип рекламы: " + f.ST1.options[n].value)  + "\n\r" + ( "Ваш возвраст: " + f.ST2.options[k].value) + "\n\r" + ( "Ваш пол: " + f.ST3.options[g].value))
+      if(n | k | g) alert(("РўРёРї СЂРµРєР»Р°РјС‹: " + f.ST1.options[n].value)  + "\n\r" + ( "Р’Р°С€ РІРѕР·РІСЂР°СЃС‚: " + f.ST2.options[k].value) + "\n\r" + ( "Р’Р°С€ РїРѕР»: " + f.ST3.options[g].value))
       }
   </script>
 
@@ -34,35 +34,35 @@ function fresh() {
  </head> 
  <body>
 
-  <form action="option1.php" method="post">  							<!-- сюда посылаются выбранные значения списков -->   
+  <form action="option1.php" method="post">  							<!-- СЃСЋРґР° РїРѕСЃС‹Р»Р°СЋС‚СЃСЏ РІС‹Р±СЂР°РЅРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ СЃРїРёСЃРєРѕРІ -->   
 
 	
-<select name="ST1"> 												<!-- задается имя первого списка --> 
-<option disabled selected>Тип Рекламы</option>								<!-- <option @disabled@>Выберите - фиксированная 1 строчка  --> 
-<option value="Только Баннеры" >Только Баннеры</option>
-<option value="Баннеры и всплывающие окна" >Баннеры и всплывающие окна</option>
-</select>   														<!-- конец первого списка --> 
+<select name="ST1"> 												<!-- Р·Р°РґР°РµС‚СЃСЏ РёРјСЏ РїРµСЂРІРѕРіРѕ СЃРїРёСЃРєР° --> 
+<option disabled selected>РўРёРї Р РµРєР»Р°РјС‹</option>								<!-- <option @disabled@>Р’С‹Р±РµСЂРёС‚Рµ - С„РёРєСЃРёСЂРѕРІР°РЅРЅР°СЏ 1 СЃС‚СЂРѕС‡РєР°  --> 
+<option value="РўРѕР»СЊРєРѕ Р‘Р°РЅРЅРµСЂС‹" >РўРѕР»СЊРєРѕ Р‘Р°РЅРЅРµСЂС‹</option>
+<option value="Р‘Р°РЅРЅРµСЂС‹ Рё РІСЃРїР»С‹РІР°СЋС‰РёРµ РѕРєРЅР°" >Р‘Р°РЅРЅРµСЂС‹ Рё РІСЃРїР»С‹РІР°СЋС‰РёРµ РѕРєРЅР°</option>
+</select>   														<!-- РєРѕРЅРµС† РїРµСЂРІРѕРіРѕ СЃРїРёСЃРєР° --> 
 
-<select name="ST2"> 												<!-- задается имя второго списка --> 
-<option  disabled selected> Ваш возвраст</option>					<!-- <option value="Трус" selected>Трус</option> - выбирается по умолчанию -->
-<option value="Менее 14" >Менее 14</option>
+<select name="ST2"> 												<!-- Р·Р°РґР°РµС‚СЃСЏ РёРјСЏ РІС‚РѕСЂРѕРіРѕ СЃРїРёСЃРєР° --> 
+<option  disabled selected> Р’Р°С€ РІРѕР·РІСЂР°СЃС‚</option>					<!-- <option value="РўСЂСѓСЃ" selected>РўСЂСѓСЃ</option> - РІС‹Р±РёСЂР°РµС‚СЃСЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ -->
+<option value="РњРµРЅРµРµ 14" >РњРµРЅРµРµ 14</option>
 <option value="14-16" >14-16</option>
 <option value="16-18" >16-18</option>
-<option value="Более 18" >Более 18</option>
-</select> 														<!-- конец второго списка --> 
+<option value="Р‘РѕР»РµРµ 18" >Р‘РѕР»РµРµ 18</option>
+</select> 														<!-- РєРѕРЅРµС† РІС‚РѕСЂРѕРіРѕ СЃРїРёСЃРєР° --> 
 
-<select name="ST3"> 												<!-- задается имя третьего списка --> 
-<option  disabled selected>Ваш пол:</option>								<!-- <option @disabled@>Выберите - фиксированная 1 строчка  --> 
-<option value="Мужской" >Мужской</option>
-<option value="Женский" >Женский</option>
-</select>   														<!-- конец третьего списка --> 
+<select name="ST3"> 												<!-- Р·Р°РґР°РµС‚СЃСЏ РёРјСЏ С‚СЂРµС‚СЊРµРіРѕ СЃРїРёСЃРєР° --> 
+<option  disabled selected>Р’Р°С€ РїРѕР»:</option>								<!-- <option @disabled@>Р’С‹Р±РµСЂРёС‚Рµ - С„РёРєСЃРёСЂРѕРІР°РЅРЅР°СЏ 1 СЃС‚СЂРѕС‡РєР°  --> 
+<option value="РњСѓР¶СЃРєРѕР№" >РњСѓР¶СЃРєРѕР№</option>
+<option value="Р–РµРЅСЃРєРёР№" >Р–РµРЅСЃРєРёР№</option>
+</select>   														<!-- РєРѕРЅРµС† С‚СЂРµС‚СЊРµРіРѕ СЃРїРёСЃРєР° --> 
 
 <input type="button" value="OK" onClick="dataSelect(this.form)">
-<input type="button" value="Ввести заново" onClick="fresh()">
+<input type="button" value="Р’РІРµСЃС‚Рё Р·Р°РЅРѕРІРѕ" onClick="fresh()">
 
-<div style="float:right;">v.Beta0.06  ТАБЛИЦУ НИЗЯ, ГРУЗИТЬ ПУСТЫЕ ИЗОБРАЖЕНИЯ</div>
+<div style="float:right;">v.Beta0.06  РўРђР‘Р›РР¦РЈ РќРР—РЇ, Р“Р РЈР—РРўР¬ РџРЈРЎРўР«Р• РР—РћР‘Р РђР–Р•РќРРЇ</div>
 
-<hr> 								<!-- линия --> 
+<hr> 								<!-- Р»РёРЅРёСЏ --> 
 
 <input type="button" value="GAME" name="rbtest" onClick="fresh()">
 
