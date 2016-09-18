@@ -1,0 +1,130 @@
+
+<!-- http://forum.cherepovets.net/index.php?showtopic=162447 -->
+<!-- http://htmlbook.ru/html/option.html -->
+<!-- <pre>...</pre>	Òåêñò ôèêñèðîâàííîé øèðèíû ñ ñîõðàíåíèåì âñåõ ïðîáåëîâ è ïåðåíîñîâ. -->
+<!-- http://htmlbook.ru/samlayout/blochnaya-verstka/pozitsionirovanie-elementov -->
+<!-- http://www.dataved.ru/2011/12/javascript.html - ðàíäîìíûå õîëñòû, íå ïîâòîðÿþòñÿ -->
+<!-- http://shpargalkablog.ru/2012/04/css-knopki.html - ìíîãî êíîïîê -->
+<!-- http://htmlbook.ru/html/img - òåã img -->
+
+
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Beta 0.05</title>
+  <script>
+    function dataSelect(f) {
+      n = f.ST1.selectedIndex
+      k = f.ST2.selectedIndex
+      g = f.ST3.selectedIndex 
+      if(n | k | g) alert(("Òèï ðåêëàìû: " + f.ST1.options[n].value)  + "\n\r" + ( "Âàø âîçâðàñò: " + f.ST2.options[k].value) + "\n\r" + ( "Âàø ïîë: " + f.ST3.options[g].value))
+      }
+  </script>
+
+
+<script>
+function fresh() {
+    location.reload();
+}
+</script>
+
+
+
+ </head> 
+ <body>
+
+  <form action="option1.php" method="post">  							<!-- ñþäà ïîñûëàþòñÿ âûáðàííûå çíà÷åíèÿ ñïèñêîâ -->   
+
+	
+<select name="ST1"> 												<!-- çàäàåòñÿ èìÿ ïåðâîãî ñïèñêà --> 
+<option disabled selected>Òèï Ðåêëàìû</option>								<!-- <option @disabled@>Âûáåðèòå - ôèêñèðîâàííàÿ 1 ñòðî÷êà  --> 
+<option value="Òîëüêî Áàííåðû" >Òîëüêî Áàííåðû</option>
+<option value="Áàííåðû è âñïëûâàþùèå îêíà" >Áàííåðû è âñïëûâàþùèå îêíà</option>
+</select>   														<!-- êîíåö ïåðâîãî ñïèñêà --> 
+
+<select name="ST2"> 												<!-- çàäàåòñÿ èìÿ âòîðîãî ñïèñêà --> 
+<option  disabled selected> Âàø âîçâðàñò</option>					<!-- <option value="Òðóñ" selected>Òðóñ</option> - âûáèðàåòñÿ ïî óìîë÷àíèþ -->
+<option value="Ìåíåå 14" >Ìåíåå 14</option>
+<option value="14-16" >14-16</option>
+<option value="16-18" >16-18</option>
+<option value="Áîëåå 18" >Áîëåå 18</option>
+</select> 														<!-- êîíåö âòîðîãî ñïèñêà --> 
+
+<select name="ST3"> 												<!-- çàäàåòñÿ èìÿ òðåòüåãî ñïèñêà --> 
+<option  disabled selected>Âàø ïîë:</option>								<!-- <option @disabled@>Âûáåðèòå - ôèêñèðîâàííàÿ 1 ñòðî÷êà  --> 
+<option value="Ìóæñêîé" >Ìóæñêîé</option>
+<option value="Æåíñêèé" >Æåíñêèé</option>
+</select>   														<!-- êîíåö òðåòüåãî ñïèñêà --> 
+
+<input type="button" value="OK" onClick="dataSelect(this.form)">
+<input type="button" value="Ââåñòè çàíîâî" onClick="fresh()">
+
+<div style="float:right;">v.Beta0.05</div>
+
+<hr> 								<!-- ëèíèÿ --> 
+
+<input type="button" value="GAME" name="rbtest" onClick="fresh()">
+
+<script language="JavaScript">
+function randomInteger(min, max) {
+  var rand = min + Math.random() * (max - min)
+  rand = Math.round(rand);
+  return rand;
+}
+</script>
+
+<script language="JavaScript">
+function calculator() {
+var k1 = randomInteger(1, 10000);
+return k1;
+}
+</script>
+
+<script language="JavaScript">
+function calculator2() {
+var k1 = randomInteger(1, 10000);
+return k1;
+}
+</script>
+
+<script language="JavaScript">
+function calculator3() {
+var k1 = randomInteger(1, 10000);
+return k1;
+}
+</script>
+
+<script language="JavaScript">
+function calculator4() {
+var k1 = randomInteger(1, 10000);
+return k1;
+}
+</script>
+
+
+  <table border="1">
+   <tr>
+    <th><script>document.write(calculator());</script></th>
+    <th><script>document.write(calculator2());</script></th>
+   </tr>
+   <tr>
+    <td><script>document.write(calculator3());</script></td>
+    <td><script>document.write(calculator4());</script></td>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+ </body>
+
+</html>
